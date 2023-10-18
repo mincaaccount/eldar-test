@@ -3,9 +3,12 @@ package controller;
 import model.RequestImporte;
 import model.ResponseTasa;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 import service.TarjetaService;
 
+@SpringBootApplication
 @RestController
 public class TarjetaController {
 
@@ -32,6 +35,10 @@ public class TarjetaController {
 
         double tasa = tarjetaService.calcularTasaService(requestImporte);
         return new ResponseTasa(tasa);
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(TarjetaController.class, args);
     }
 
 }
