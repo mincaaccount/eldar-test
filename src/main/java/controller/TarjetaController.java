@@ -16,6 +16,11 @@ public class TarjetaController {
         this.tarjetaService = tarjetaService;
     }
 
+    @GetMapping("/")
+    public String getPage() {
+        return "Example working";
+    }
+
     @PostMapping("/calcularTasa")
     @ResponseBody
     public ResponseTasa calcularTasaController(@RequestBody RequestImporte requestImporte) {
