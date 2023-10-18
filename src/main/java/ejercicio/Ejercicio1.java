@@ -1,4 +1,4 @@
-package main;
+package ejercicio;
 
 import model.TarjetaAmex;
 import model.TarjetaDeCredito;
@@ -7,7 +7,7 @@ import model.TarjetaVisa;
 
 import java.time.LocalDate;
 
-public class Main {
+public class Ejercicio1 {
     public static void main(String[] args) {
         LocalDate fechaVencimientoVisa = LocalDate.of(27, 12, 20);
         TarjetaDeCredito tarjeta1 = new TarjetaVisa("1234 5678 9012 3456", "Marcos Inca", fechaVencimientoVisa);
@@ -51,6 +51,5 @@ public class Main {
         double importeOperacion = 1000;
         double tasaTarjeta1 = tarjeta1.calcularTasaConImporte(importeOperacion);
         System.out.println("\nTasa de tarjeta " + tarjeta1.getMarca() + " para una operación de $" + importeOperacion + " es de " + tasaTarjeta1);
-
     }
 }
