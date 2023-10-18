@@ -1,11 +1,15 @@
 package ejercicio;
 
+import java.util.ArrayList;
+
 public class Ejercicio5 {
     public static void main(String[] args) {
-        String[] myArray = {"Ejemplo", "TRES"};
+        ArrayList<String> myList = new ArrayList<>();
+        myList.add("Ejemplo");
+        myList.add("TRES");
 
-        String resultado = String.join(" ", myArray).toLowerCase();
+        String result = String.join(" ", myList).toLowerCase();
 
-        System.out.println(resultado);
+        System.out.println(result);
     }
 }

@@ -18,7 +18,7 @@ public class TarjetaController {
         return "Example working";
     }
 
-    @PostMapping("/calcularTasa")
+    @PostMapping("/calcular")
     @ResponseBody
     public ResponseTasa calcularTasaController(@RequestBody RequestImporte requestImporte) {
         double importe = requestImporte.getImporte();

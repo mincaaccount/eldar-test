@@ -8,7 +8,7 @@ Para calcular la tasa, realiza una solicitud a la siguiente URL utilizando una s
 
 ### URL de la API
 
-- URL: https://eldar-test-git-marcosinca-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/calcularTasa
+- URL: https://eldar-test-git-marcosinca-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/calcular
 
 ### Ejemplo de solicitud JSON
 
