@@ -1,7 +1,10 @@
 package model;
 
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 
+@Component
 public class TarjetaAmex extends TarjetaDeCredito {
     public TarjetaAmex(String numeroTarjeta, String cardholder, LocalDate fechaVencimiento) {
         super("AMEX", numeroTarjeta, cardholder, fechaVencimiento);

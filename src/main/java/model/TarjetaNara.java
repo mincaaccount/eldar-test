@@ -1,7 +1,10 @@
 package model;
 
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 
+@Component
 public class TarjetaNara extends TarjetaDeCredito {
     public TarjetaNara(String numeroTarjeta, String cardholder, LocalDate fechaVencimiento) {
         super("NARA", numeroTarjeta, cardholder, fechaVencimiento);

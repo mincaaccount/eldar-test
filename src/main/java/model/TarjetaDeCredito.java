@@ -1,7 +1,10 @@
 package model;
 
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDate;
 
+@Component
 public class TarjetaDeCredito {
     private String marca;
     private String numeroTarjeta;

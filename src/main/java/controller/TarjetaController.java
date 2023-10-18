@@ -12,12 +12,8 @@ import service.TarjetaService;
 @RestController
 public class TarjetaController {
 
-    private final TarjetaService tarjetaService;
-
     @Autowired
-    public TarjetaController(TarjetaService tarjetaService) {
-        this.tarjetaService = tarjetaService;
-    }
+    private TarjetaService tarjetaService;
 
     @GetMapping("/")
     public String getPage() {
